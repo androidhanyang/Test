@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyFuck</string>
+    <string name="dingyue">订阅</string>
+    <string name="redian">热点</string>
+    <string name="beijing">北京</string>
+    <string name="wanle">玩乐</string>
+    <string name="shequ">社区</string>
+
+</resources>

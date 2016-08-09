@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_b_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/fragment_b_iv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_personal_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="热点"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <!--<com.hy.myfuck.view.PullToRefreshView-->
+    <!--android:id="@+id/fragment_b_pull"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/fragment_b_rl">-->
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/hot_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/fragment_b_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.liaoinstan.springview.widget.SpringView>
+    <!--</com.hy.myfuck.view.PullToRefreshView>-->
+</LinearLayout>

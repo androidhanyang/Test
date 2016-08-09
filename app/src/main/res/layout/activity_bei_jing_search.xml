@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hy.myfuck.BeiJingSearch">
+
+    <RelativeLayout
+        android:id="@+id/fragment_b_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/fragment_b_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/weibotable_more_tools_left" />
+
+        <EditText
+            android:id="@+id/beijing_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_marginTop="9dp"
+            android:hint="搜索文章和频道"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/beijing_search_btn"
+            android:layout_toRightOf="@+id/fragment_b_iv"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/beijing_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

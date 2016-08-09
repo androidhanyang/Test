@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    >
+
+    <ImageView
+
+        android:id="@+id/shequneibu_item1_iv1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/shequneibu_item1_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/shequneibu_item1_iv1"
+        android:layout_toEndOf="@+id/shequneibu_item1_iv1"
+        android:layout_toRightOf="@+id/shequneibu_item1_iv1"
+        android:gravity="center_vertical"
+        android:text="123123123123"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/shequneibu_item1_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/shequneibu_item1_iv1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="123123123123123123"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imageView" />
+
+
+    <TextView
+        android:id="@+id/shequneibu_item1_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="123123123123123123dasdasdasdasdasd"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+</RelativeLayout>

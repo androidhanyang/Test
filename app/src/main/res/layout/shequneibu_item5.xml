@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+   >
+
+    <ImageView
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/shequneibu_item5_iv1" />
+    <TextView
+        android:id="@+id/shequneibu_item5_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="123123123123"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_alignTop="@+id/shequneibu_item5_iv1"
+        android:layout_toRightOf="@+id/shequneibu_item5_iv1"
+        android:layout_toEndOf="@+id/shequneibu_item5_iv1" />
+
+    <TextView
+        android:id="@+id/shequneibu_item5_tv2"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="22sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:text="123123123123123123"
+        android:layout_below="@+id/shequneibu_item5_iv1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_below="@+id/shequneibu_item5_tv2"
+
+        >
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/shequneibu_item5_iv2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        android:layout_marginBottom="72dp"
+        />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/shequneibu_item5_iv3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        android:layout_marginBottom="72dp"
+        />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/shequneibu_item5_iv4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        android:layout_marginBottom="72dp"
+        />
+   </LinearLayout>
+</RelativeLayout>

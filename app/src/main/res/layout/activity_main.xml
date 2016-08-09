@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.hy.myfuck.MainActivity">
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_rg" />
+
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_rg_rb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_rb1"
+            android:button="@null"
+            android:checked="true"
+
+            />
+
+        <RadioButton
+            android:id="@+id/main_rg_rb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_rb2"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/main_rg_rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_rb3"
+            android:button="@null"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/main_rg_rb4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_rb4"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/main_rg_rb5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_rb5"
+            android:button="@null" />
+
+
+    </RadioGroup>
+    <com.hy.myfuck.view.PullDoorView
+        android:id="@+id/main_pulldoor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd">
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="上滑可以进入首页"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </com.hy.myfuck.view.PullDoorView>
+</RelativeLayout>
+

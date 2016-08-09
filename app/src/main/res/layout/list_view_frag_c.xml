@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_b_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/fragment_b_iv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_personal_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="北京"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/list_view_frag_c_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/abc_ic_search_api_mtrl_alpha" />
+
+    </RelativeLayout>
+
+    <com.hy.myfuck.view.PullToRefreshView
+        android:id="@+id/fragc_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_b_rl">
+
+        <ListView
+
+            android:id="@+id/list_view_frag_c_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fragment_b_rl" />
+    </com.hy.myfuck.view.PullToRefreshView>
+</RelativeLayout>
